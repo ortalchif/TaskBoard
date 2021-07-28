@@ -1,0 +1,154 @@
+html,
+body {
+  background-image: url(img/background.jpg);
+  font-size: x-large;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 10% 40% 45%;
+}
+header {
+  grid-column: span 6;
+  margin-top: 15px;
+}
+main {
+  grid-column: span 6;
+  background-image: url(img/formbg.jpg);
+}
+
+#headline {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+/*------------------------------טופס------------------------------------------------*/
+
+form {
+  width: 1000px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+label {
+  font-size: x-large;
+  margin-top: 30px;
+}
+.formInput {
+  background-color: transparent;
+  border: 1px solid black;
+}
+#timeInput {
+  width: 120px;
+}
+.btn {
+  height: 50px;
+  width: 200px;
+}
+
+#content {
+  grid-column: span 6;
+  display: flex;
+  flex-wrap: wrap;
+}
+.noteStyle {
+  /* border: 5px solid black; */
+  background-image: url(img/notebg.png);
+  width: 200px;
+  height: 250px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.bi-x-circle-fill {
+  /* display: none; */
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  right: 15px;
+}
+
+.spanDateClass {
+  position: absolute;
+  top: 200px;
+  font-size: 15px;
+  bottom: 0px;
+  left: 8px;
+}
+.spanTimeClass {
+  position: absolute;
+  top: 200px;
+  font-size: 15px;
+  bottom: 0px;
+  right: 55px;
+}
+textarea {
+  overflow-y: scroll hidden;
+  background-color: transparent;
+  border: transparent;
+  height: 140px;
+  width: 130px;
+  margin-top: 50px;
+}
+
+/* ----------------fade in note -----------------------*/
+
+div .noteStyle {
+  display: inline-block;
+  font-family: "Dancing Script";
+  color: black;
+  text-transform: none;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
